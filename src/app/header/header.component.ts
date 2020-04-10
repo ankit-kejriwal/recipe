@@ -9,8 +9,4 @@ export class HeaderComponent implements OnInit {
   @Output() featureSelected = new EventEmitter<string>();
   constructor() {}
   ngOnInit(): void {}
-
-  onSelect(type: string) {
-    this.featureSelected.emit(type);
-  }
 }
